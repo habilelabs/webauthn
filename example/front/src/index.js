@@ -1,4 +1,4 @@
-import { solveRegistrationChallenge, solveLoginChallenge } from '@webauthn/client';
+import { solveRegistrationChallenge, solveLoginChallenge } from '@shankarmorwal/webauth-client';
 
 const loginButton = document.getElementById('login');
 const registerButton = document.getElementById('register');
@@ -20,7 +20,7 @@ registerButton.onclick = async () => {
     const credentials = await solveRegistrationChallenge(challenge);
 
     const { loggedIn } = await fetch(
-        'https://localhost:8000/register', 
+        'https://localhost:8000/register',
         {
             method: 'POST',
             headers: {
@@ -50,7 +50,7 @@ loginButton.onclick = async () => {
 
     const credentials = await solveLoginChallenge(challenge);
     const { loggedIn } = await fetch(
-        'https://localhost:8000/login-challenge', 
+        'https://localhost:8000/login-challenge',
         {
             method: 'POST',
             headers: {

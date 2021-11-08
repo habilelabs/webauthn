@@ -11,13 +11,13 @@ For a more thorough introduction see these two nice articles:
 ## Installation
 
 ```js
-npm install @webauthn/client
-npm install @webauthn/server
+npm install @shankarmorwal/webauth-client
+npm install @shankarmorwal/webauth-server
 ```
 
 ## usage
 
-`Webauthn` is composed of two parts `@webauthn/client` and `@webauthn/server`
+`Webauthn` is composed of two parts `@shankarmorwal/webauth-client` and `@shankarmorwal/webauth-server`
 
 ### On the browser
 
@@ -25,7 +25,7 @@ npm install @webauthn/server
 import { 
     solveRegistrationChallenge,
     solveLoginChallenge
-} from '@webauthn/client';
+} from '@shankarmorwal/webauth-client';
 ```
 
 - `solveRegistrationChallenge`:
@@ -44,7 +44,7 @@ import {
     parseLoginRequest,
     generateLoginChallenge,
     verifyAuthenticatorAssertion,
-} from '@webauthn/server';
+} from '@shankarmorwal/webauth-server';
 ```
 
 - `parseRegisterRequest`:

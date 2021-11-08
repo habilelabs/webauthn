@@ -12,7 +12,7 @@ const {
     generateLoginChallenge,
     parseLoginRequest,
     verifyAuthenticatorAssertion,
-} = require('@webauthn/server');
+} = require('@shankarmorwal/webauth-server');
 
 const app = express();
 app.use(cors());
