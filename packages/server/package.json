@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "cbor": "^5.0.1",
-    "jsrsasign": "^8.0.12"
+    "jsrsasign": "10.4.1"
   },
   "resolutions": {
     "minimist": "^1.2.5"
